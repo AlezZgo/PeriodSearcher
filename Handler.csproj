@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PeriodSearcher\Enumerators\**" />
+    <Compile Remove="PeriodSearcher\Models\**" />
+    <EmbeddedResource Remove="PeriodSearcher\Enumerators\**" />
+    <EmbeddedResource Remove="PeriodSearcher\Models\**" />
+    <None Remove="PeriodSearcher\Enumerators\**" />
+    <None Remove="PeriodSearcher\Models\**" />
+    <Page Remove="PeriodSearcher\Enumerators\**" />
+    <Page Remove="PeriodSearcher\Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PeriodSearcher">
+      <HintPath>C:\Users\Alexander\Desktop\PeriodSearcher.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
